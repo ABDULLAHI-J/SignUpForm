@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- container section main content -->
+    <div class="container" role="main">
+      <!-- to begin with this is the text section content -->
+      <div class="text-content">
+        <h1>Learn to code by <br />watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time.
+          <br />Watching scripted tutorials is great, but understanding how<br />
+          developers think is invaluable.
+        </p>
+      </div>
+
+      <!-- Our card form starts here -->
+      <div class="card-form">
+        <div class="trial">
+          <p>
+            <strong>Try it free 7 days </strong>
+            then $20/mo. thereafter
+          </p>
+        </div>
+        <!-- form section -->
+        <form class="form-card" method="get" id="form">
+          <div class="form-control">
+            <input type="text" placeholder="First Name" id="first-name" />
+            <small class="text-small">First Name cannot be empty</small>
+            <img
+              class="img-error"
+              src="images/icon-error.svg"
+              alt="error image"
+            />
+          </div>
+          <div class="form-control">
+            <input type="text" placeholder="Last Name" id="last-name" />
+            <small class="last-name-small">Last Name cannot be empty</small>
+            <img
+              class="img-error"
+              src="images/icon-error.svg"
+              alt="error image"
+            />
+          </div>
+          <div class="form-control">
+            <input type="text" placeholder="Email" id="email" />
+            <small class="email-small">Looks like this is not an email</small>
+            <small class="empty-email">Email cannot be empty</small>
+            <img
+              class="img-error"
+              src="images/icon-error.svg"
+              alt="error image"
+            />
+          </div>
+          <div class="form-control">
+            <input type="text" placeholder="Password" id="password" />
+            <small class="password-small">Password cannot be empty</small>
+            <img
+              class="img-error"
+              src="images/icon-error.svg"
+              alt="error image"
+            />
+          </div>
+          <button type="submit" id="submit-form">CLAIM YOUR FREE TRIAL</button>
+          <small class="terms-services">
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a></small
+          >
+        </form>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
